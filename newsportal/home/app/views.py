@@ -10,6 +10,8 @@ def homeView(request):
 
 def category(request):
     views = {}
+    views['navbar'] = navbar.objects.all()
+
     return render(request, 'categori.html', views)
 
 def aboutView(request):
